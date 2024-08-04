@@ -1,0 +1,82 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+.calculator {
+    width: 350px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border: 1px solid #dedede;
+}
+
+.display {
+    background-color: #e8edee;
+    color: #333;
+    text-align: right;
+    padding: 25px;
+    font-size: 2.5em;
+    box-sizing: border-box;
+    border-bottom: 1px solid #dedede;
+    font-weight: bold;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1px;
+    background-color: #f0f0f0;
+}
+
+.btn {
+    background-color: #d4e6f1; /* Soft Blue */
+    border: none;
+    outline: none;
+    font-size: 1.5em;
+    padding: 20px;
+    cursor: pointer;
+    transition: background-color 0.2s, box-shadow 0.2s;
+    color: #333;
+}
+
+.btn:hover {
+    background-color: #4881ad;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.zero {
+    grid-column: span 2;
+}
+
+.equal {
+    background-color: #dbbcba; /* Soft Coral */
+    color: #ffffff;
+}
+
+.equal:hover {
+    background-color: #f1948a;
+}
+
+.btn.operation {
+    background-color: #fad7a0; /* Soft Yellow */
+    color: #333;
+}
+
+.btn.operation:hover {
+    background-color: #f7c472;
+}
+
+@media (max-width: 768px) {
+    .calculator {
+        width: 100%;
+        margin: 20px;
+    }
+}
